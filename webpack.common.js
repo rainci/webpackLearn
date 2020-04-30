@@ -6,6 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   entry: {//入口文件
     app: './src/index.js',
+    another: './src/another.js'
   },
   plugins: [//插件
     new CleanWebpackPlugin(),//清理产出文件
@@ -13,7 +14,7 @@ module.exports = {
       title: 'rainci wp'
     }),
     new webpack.NamedModulesPlugin(),//增加热更新功能
-    new webpack.HotModuleReplacementPlugin()//增加热更新功能
+    new webpack.HotModuleReplacementPlugin(),//增加热更新功能
   ],
   module: {//模块
     rules: [

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-04-23 18:14:12
- * @LastEditTime: 2020-04-28 18:48:59
+ * @LastEditTime: 2020-04-29 15:52:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /wpDemo/src/index.js
@@ -51,3 +51,8 @@ if(module.hot){
         document.body.appendChild(el);
     })
 }
+if(process.env.NODE_ENV === 'production'){
+    console.log('i am production');
+    
+}
+console.log('process.env:',process.env,'process.env.NODE_ENV:',process.env.NODE_ENV);
